@@ -1,0 +1,14 @@
+{
+    "asset": {
+        "path": "assets",
+        "css": {
+            "path": "css",
+            "file": "theme.css"
+        },
+        "js": {
+            "path": "js",
+            "file": "theme.js"
+        }
+    },
+    "override": ["162.243.147.213"]
+}

@@ -1,0 +1,823 @@
+$component-typography-font-awesome-solid-font-family: "Font Awesome 5 Free"!default;
+$component-typography-font-awesome-solid-font-weight: 600!default;
+$component-typography-font-awesome-brands-font-family: "Font Awesome 5 Brands"!default;
+$component-typography-font-awesome-brands-font-weight: 600!default;
+$component-typography-font-custom-font-family: "ih-icon"!default;
+$component-typography-font-custom-font-weight: normal!default;
+$component-content-apps-search-button-background: $color4 !default;
+$component-content-apps-home-search-button-background: $color5 !default;
+$component-content-apps-home-search-button-font-size: 24px !default;
+$component-content-apps-register-buttton-font-size: 12pt !default;
+$component-content-apps-register-buttton-background: $color2 !default;
+$component-content-apps-map-results-pin-background: $color1 !default;
+$component-content-apps-map-results-title-foreground: $color1 !default;
+$component-content-apps-name-title-foreground: $color1 !default;
+$component-content-apps-directions-button-background: $color1 !default;
+$component-content-apps-directions-button-foreground: $color-white !default;
+$component-content-apps-tab-foreground: $color2 !default;
+$component-content-apps-phone-website-foreground: $color1 !default;
+$component-content-apps-directions-button-background-hover: $color1 !default;
+$component-content-apps-map-link-foreground: $color1 !default;
+$component-content-apps-results-refiner-count-background: $color4 !default;
+$component-content-apps-results-refiner-count-foreground: $color-white !default;
+$component-content-apps-results-refiner-link-foreground: $color4 !default;
+$component-content-apps-padding: $default-padding !default;
+$component-content-apps-list-providerlink-font-size-sm: 18pt !default;
+$component-content-apps-list-compare-providerlink-font-size: 12pt !default;
+$component-content-apps-list-compare-specialties-font-size: 14px !default;
+$component-content-apps-name-title-font-size: 30px !default;
+$component-content-apps-primaryspecialty-font-size: 14px !default;
+$component-content-apps-phone-website-font-size: 14px !default;
+$component-content-apps-map-link-font-size: 18px !default;
+$component-content-apps-map-marker-icon-font-size: 24px !default;
+$component-content-apps-directions-button-font-size: 12pt !default;
+$component-content-apps-directions-button-font-size-sm: 11pt !default;
+$component-content-apps-list-refiner-h3: 20px !default;
+$component-content-apps-list-refiner-label: 14px !default;
+$component-content-apps-results-refiner-count-font-size: 13px !default;
+$component-content-apps-event-cart-input-font-size: 14px !default;
+$component-content-apps-event-cart-input-color: #555 !default;
+$component-content-apps-event-cart-input-background: #fff !default;
+$component-content-apps-event-cart-input-border-color: #ccc !default;
+$component-content-apps-event-button-configurable-background: $color1 !default;
+$component-content-apps-condition-card-heading-font-size: 24px!default;
+$component-content-apps-phone-icon-font-size: 16px !default;
+$component-content-apps-phone-icon-color: $color1 !default;
+$component-content-apps-map-marker-icon-content: "\f3c5" !default;
+$component-content-apps-map-marker-icon-font-family: $component-typography-font-awesome-solid-font-family !default;
+$component-content-apps-map-marker-icon-font-weight: $component-typography-font-awesome-solid-font-weight !default;
+$component-content-apps-phone-website-label-font-family: $component-typography-font-awesome-solid-font-family !default;
+$component-content-apps-phone-website-label-font-weight: $component-typography-font-awesome-solid-font-family !default;
+$component-content-apps-provider-accepting-new-patients-color: $color-black !default;
+$component-content-apps-provider-accepting-new-patients-false-icon-color: $color-black !default;
+$component-content-apps-provider-accepting-new-patients-true-icon-color: $color1 !default;
+
+div.ih-event,
+div.ih-location,
+div.ih-provider {
+
+	@include sm {
+		&.ih-publiclistview {
+			.ih-field-providernamelink {
+				padding-right: 100px;
+
+				>div,
+				a {
+					font-size: $component-content-apps-list-providerlink-font-size-sm;
+				}
+			}
+
+			.ih-field-primaryspecialty {
+				padding-bottom: $component-content-apps-padding;
+			}
+
+			.col-xs-12.col-md-3 {
+				width: 33.333%;
+			}
+
+			.col-xs-12.col-md-4,
+			.col-xs-12.col-md-5 {
+				width: 66.666%;
+			}
+		}
+
+		&.ih-publicdetailview {
+			.col-xs-12.col-md-3 {
+				width: 33.33333%;
+			}
+
+			.col-xs-12.col-md-4 {
+				width: 66.66667%;
+			}
+
+			.col-xs-12.col-md-5 {
+				width: 100%;
+			}
+		}
+	}
+
+	// Compare
+	.ih-tab-compare {
+		&.col-sm-3 {
+
+			.col-xs-12.stacked {
+				padding: 0;
+			}
+
+			.ih-field-providernamelink {
+				display: flex;
+				align-items: flex-end;
+				margin: 0;
+				padding: 0;
+				line-height: 12pt;
+				min-height: 50px;
+
+				a {
+					font-size: $component-content-apps-list-compare-providerlink-font-size;
+					line-height: 12pt;
+					font-weight: 500;
+					margin: 0;
+					padding: 0;
+				}
+			}
+
+			.ih-field-providerimage {
+				margin-top: $component-content-apps-padding;
+				margin-bottom: $component-content-apps-padding;
+			}
+
+			.ih-field-specialties {
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+						color: #555;
+						font-size: $component-content-apps-list-compare-specialties-font-size;
+						font-style: italic;
+						text-transform: none;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	// Compare Checkbox
+	.ih-compare-wrap {
+		z-index: 9;
+		display: inline-block;
+		width: unset;
+
+		@include sm-and-up {
+			text-transform: uppercase;
+			text-align: right;
+			float: right;
+
+			input {
+				margin-left: $component-content-apps-padding / 2;
+				float: right;
+			}
+		}
+
+		@include sm {
+			bottom: -43px;
+		}
+
+		@include md {
+			bottom: -47px;
+		}
+
+		@include lg {
+			bottom: -50px;
+		}
+	}
+
+	// Map
+	.map-results-pin {
+		background-color: $component-content-apps-map-results-pin-background;
+	}
+
+	.map-results-title {
+		a {
+			color: $component-content-apps-map-results-title-foreground;
+		}
+	}
+
+	// Fields
+	.ih-field-eventtitlelink,
+	.ih-field-locationnamelink,
+	.ih-field-providernamelink,
+	.ih-field-providername {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $component-content-apps-name-title-foreground;
+			font-weight: 500;
+			margin: 0;
+			padding: 0;
+		}
+
+		>div,
+		a {
+			color: $component-content-apps-name-title-foreground;
+			font-size: $component-content-apps-name-title-font-size;
+		}
+
+		>div {
+			color: $color1;
+		}
+	}
+
+	.ih-field-acceptingnewpatients {
+		p {
+			color: $component-content-apps-provider-accepting-new-patients-color;
+			display: flex;
+			margin: 0;
+			padding: 0;
+
+			span {
+				display: inline-block;
+				margin-right: 10px;
+
+				&.danger {
+					color: $component-content-apps-provider-accepting-new-patients-false-icon-color;
+				}
+
+				&.success {
+					color: $component-content-apps-provider-accepting-new-patients-true-icon-color;
+				}
+			}
+		}
+	}
+
+	.ih-field-primaryspecialty {
+		div {
+			color: #555;
+			font-size: $component-content-apps-primaryspecialty-font-size;
+			font-style: italic;
+			text-transform: none;
+			font-weight: 500;
+		}
+	}
+
+	.ih-field-locationname,
+	.ih-field-primarylocationname {
+		font-weight: 500;
+	}
+
+	.ih-field-image,
+	.ih-field-eventimage,
+	.ih-field-locationimage,
+	.ih-field-providerimage {
+		border: 1px solid #eee;
+		//border-radius: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		padding-bottom: 100%;
+		position: relative;
+		width: 100%;
+
+		img {
+			position: absolute;
+			top: 0;
+			width: auto;
+			min-height: 100%;
+			min-width: 100%;
+		}
+	}
+
+	//
+	.ih-field-primaryphone,
+	.ih-field-website {
+		clear: both;
+		display: block;
+		float: none;
+		width: 100%;
+
+		label {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			overflow: hidden;
+			margin-right: $component-content-apps-padding / 2;
+
+			&:before {
+				color: $component-content-apps-phone-website-foreground;
+				display: block;
+				font-family: $component-content-apps-phone-website-label-font-family;
+				font-weight: $component-content-apps-phone-website-label-font-weight;
+				margin-top: 4px;
+				height: 16px;
+				width: 20px;
+			}
+		}
+
+		div,
+		a {
+			display: inline-block;
+			color: $component-content-apps-phone-website-foreground;
+			font-size: $component-content-apps-phone-website-font-size;
+			font-weight: 300;
+		}
+
+		p {
+			line-height: 0;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	//added
+	.ih-field-locationhours{
+		ul{
+			list-style: none;
+			padding: 0px;
+			padding-top: 10px;
+		}
+	}
+
+	.ih-field-primaryphone{
+		//padding-top: 20px;
+
+		label.ih-field-label {
+			&:before {
+				content: "\f095";
+			}
+		}
+	}
+
+	//for phone icon only
+	i.fa-phone:before{
+		margin-right: 5px;
+		font-size: $component-content-apps-phone-icon-font-size;
+		color: $component-content-apps-phone-icon-color;
+	}
+
+	.ih-field-website {
+		label.ih-field-label {
+			&:before {
+				content: "\f0ac";
+			}
+		}
+	}
+
+	//
+	.ih-field-locationmap,
+	.ih-field-map {
+		padding-top: $component-content-apps-padding;
+		padding-bottom: $component-content-apps-padding;
+
+		@include xs {
+			padding-bottom: 0;
+		}
+
+		a.add-link {
+			color: $component-content-apps-map-link-foreground;
+			font-size: $component-content-apps-map-link-font-size;
+			font-weight: 500;
+			line-height: 52px;
+			text-transform: uppercase;
+			position: relative;
+			padding-left: 40px;
+
+			@include sm-and-up {
+				float: left;
+				width: 20% !important; //!ignore
+				border-right: 1px solid #eee;
+			}
+
+			i.fa.fa-map-marker {
+				left: 0;
+				position: absolute;
+				font-size: $component-content-apps-map-marker-icon-font-size;
+				line-height: 52px;
+
+				&:before {
+					content: $component-content-apps-map-marker-icon-content;
+					font-family: $component-content-apps-map-marker-icon-font-family;
+					font-weight: $component-content-apps-map-marker-icon-font-weight;
+				}
+			}
+			&:focus,
+			&:hover {
+				color: $component-content-apps-map-link-foreground;
+				text-decoration: none;
+			}
+		}
+
+		//
+		#directions_input {
+			@include sm-and-up {
+				float: right;
+				margin: 0 !important; //!ignore
+				padding: 0 !important; //!ignore
+				position: relative;
+				width: 75%;
+			}
+
+			input {
+				@include sm-and-up {
+					float: left !important; //!ignore
+				}
+
+				border: 1px solid #777;
+				line-height: 52px;
+				height: 52px;
+				padding: 0 15px;
+				margin: 0;
+
+				@include xs {
+					width: 100% !important; //!ignore
+				}
+
+				@include sm-and-up {
+					width: 70% !important; //!ignore
+					float: left;
+					margin-right: 5%;
+				}
+
+				//}
+
+				&.btn.btn-primary {
+					background-color: $component-content-apps-directions-button-background !important; //!ignore
+					color: $component-content-apps-directions-button-foreground;
+					font-weight: 400;
+					text-align: center;
+					text-transform: uppercase;
+					border: 0;
+					border-radius: 0;
+					padding: 0;
+					top: 0 !important; //!ignore
+					margin-top: 0 !important; //!ignore
+					line-height: 52px;
+					height: 52px;
+					font-size: $component-content-apps-directions-button-font-size;
+
+					@include xs {
+						margin: $component-content-apps-padding 0 !important; //!ignore
+						width: 100%;
+					}
+
+					@include sm-and-up {
+						margin: 0 0 50px 0 !important; //!ignore
+						width: 25% !important; //!ignore
+						float: right;
+					}
+
+					@include sm {
+						font-size: $component-content-apps-directions-button-font-size-sm;
+					}
+					&:focus,
+					&:hover {
+						background-color: $component-content-apps-directions-button-background-hover !important; //!ignore
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		//
+		div[id^="mapDiv_"] {
+			@include xs {
+				margin-top: 0 !important; //!ignore
+			}
+		}
+	}
+}
+
+// Search
+.ih-publicsearchview {
+	padding-bottom: $component-content-apps-padding * 2;
+
+	div.form-group {
+		margin: ($component-content-apps-padding / 2) 0;
+        padding: $component-content-apps-padding 0 0 0;
+        label{
+            padding-bottom: 10px;
+        }
+	}
+
+	div.row.stacked {
+		display: block;
+		margin: 0;
+		padding: $component-content-apps-padding 0 !important; //!ignore
+
+		.col-xs-12 {
+			padding: 0;// $component-content-apps-padding;
+		}
+
+		.btn.btn-primary.ih-button-search {
+			background: $component-content-apps-search-button-background !important; //!ignore
+		}
+	}
+}
+
+.layout-home {
+	.ih-publicsearchview {
+		padding-bottom: 0;
+
+		div.row.stacked {
+			.btn.btn-primary.ih-button-search {
+				background: $component-content-apps-home-search-button-background !important; //!ignore
+				font-size: $component-content-apps-home-search-button-font-size !important; //!ignore
+				font-weight: 600 !important; //!ignore
+				line-height: 60px !important; //!ignore
+				height: 60px !important; //!ignore
+			}
+		}
+	}
+}
+
+// Results Refiner
+.ih-publiclistrefinerview {
+	h3 {
+		font-size: $component-content-apps-list-refiner-h3;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+
+	.ih-field-label {
+		font-size: $component-content-apps-list-refiner-label;
+		font-weight: 500;
+		line-height: 17px;
+		//text-transform: uppercase;
+	}
+
+	a {
+		color: $component-content-apps-results-refiner-link-foreground;
+
+		.ih-filter-label {
+			color: $component-content-apps-results-refiner-link-foreground;
+		}
+	}
+	//
+	//
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		>li {
+			margin: 0;
+			padding: 5px 0;
+
+			>span {
+				>a {
+					color: $component-content-apps-results-refiner-count-foreground;
+					font-weight: 200;
+				}
+			}
+		}
+	}
+
+	.ih-filter-label,
+	.ih-filter-count {
+		border-radius: 4px;
+		font-weight: 300;
+		color: $component-content-apps-results-refiner-count-foreground;
+		font-size: $component-content-apps-results-refiner-count-font-size;
+	}
+
+	.ih-filter-count {
+		background: $component-content-apps-results-refiner-count-background;
+	}
+}
+
+// Tabs
+ul.nav.nav-tabs {
+	li {
+		div {
+			color: $component-content-apps-tab-foreground;
+		}
+	}
+}
+
+div.tab-content {
+	div.tab-pane {
+        padding: ($component-content-apps-padding) 0;
+	}
+}
+
+//
+.ih-event {
+
+	&.ih-publicdetailview {
+
+		//
+		.ih-field-registerbutton {
+			float: right;
+		}
+
+		//
+		div.btn-primary {
+			background: transparent;
+			border: 0;
+			border-radius: 0;
+			margin: 0;
+			padding: 0;
+
+			.btn.btn-primary.ih-button-register {
+				border-radius: 0;
+				background: $component-content-apps-register-buttton-background;
+				font-weight: 400;
+				border: 0;
+				margin: 0;
+				padding: 0 15px;
+				font-size: $component-content-apps-register-buttton-font-size;
+				height: 52px;
+				line-height: 52px;
+			}
+		}
+	}
+
+	&.ih-eventcartview {
+		dt {
+			margin-bottom: 10px;
+		}
+
+		dd {
+			margin-bottom: 15px;
+
+			select,
+			input {
+				display: block;
+				width: 100%;
+				height: 50px;
+				padding: 6px 12px;
+				font-size: $component-content-apps-event-cart-input-font-size;
+				line-height: 1.42857;
+				color: $component-content-apps-event-cart-input-color;
+				background-color: $component-content-apps-event-cart-input-background;
+				background-image: none;
+				border: 1px solid $component-content-apps-event-cart-input-border-color;
+				border-radius: 4px;
+				-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+				-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+				transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+			}
+		}
+
+		.btn.btn-primary.ih-button-configurable {
+			background: $component-content-apps-event-button-configurable-background;
+			&:focus,
+			&:hover {
+				background: darken($component-content-apps-event-button-configurable-background, 10%);
+			}
+		}
+	}
+}
+
+//below is so that location address link appears on mobile only
+.ih-field-locationaddress.sm-only{
+		display: none;
+}
+
+@media (max-width: 425px) {
+	.ih-field-locationaddress.not-sm{
+		display: none;
+	}
+	
+	.ih-field-locationaddress.sm-only{
+		display: initial;
+	}
+}
+
+//this is for the Health Resources Landing Page list cards
+
+.conditions-card{
+	
+	padding-top: 20px;
+	height: 420px;
+	border-top: 1px solid #000;
+	margin: 10px;
+
+	h4{
+		font-size: $component-content-apps-condition-card-heading-font-size;
+		text-align: center;
+	}
+
+	img { 
+		width: 100%;
+		height: 180px;
+		margin-bottom: 10px;
+
+	}
+}
+
+// Pagination
+
+div.ih-pagination-wrap {
+    padding: 0;
+    width: 100%
+}
+
+div.ih-pagination-wrap.bottom {
+    margin-top: 15px
+}
+
+div.ih-pagination-wrap.top {
+    margin-bottom: 15px
+}
+
+div.ih-pagination-wrap ul.pagination {
+    display: inline-block
+}
+
+div.ih-pagination-wrap ul.pagination li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-right: 15px
+}
+
+div.ih-pagination-wrap ul.pagination li a {
+    border-radius: 36px;
+    border: 1px solid #e3e3e3;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    min-width: 36px;
+    width: 36px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-page a {
+    border-color: #fff;
+    color: #333
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-page a:focus,
+div.ih-pagination-wrap ul.pagination li.pagination-page a:hover {
+    border-color: #e3e3e3
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-page.active a {
+    background: $color1;
+    border-color: $color1;
+    color: #fff
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-page.active a:focus,
+div.ih-pagination-wrap ul.pagination li.pagination-page.active a:hover {
+    border-color: $color1
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-first a,
+div.ih-pagination-wrap ul.pagination li.pagination-last a,
+div.ih-pagination-wrap ul.pagination li.pagination-prev a,
+div.ih-pagination-wrap ul.pagination li.pagination-next a {
+    background: #f8f8f8;
+    color: #333;
+    position: relative;
+    text-indent: -100px
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-first a:before,div.ih-pagination-wrap ul.pagination li.pagination-last a:before,div.ih-pagination-wrap ul.pagination li.pagination-prev a:before,div.ih-pagination-wrap ul.pagination li.pagination-next a:before {
+    position: absolute;
+    content: "\f048";
+    display: block;
+	font-family: FontAwesome, sans-serif;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    left: 0;
+    top: 0;
+    text-indent: 0
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-first a:focus,
+div.ih-pagination-wrap ul.pagination li.pagination-last a:focus,
+div.ih-pagination-wrap ul.pagination li.pagination-prev a:focus,
+div.ih-pagination-wrap ul.pagination li.pagination-next a:focus,
+div.ih-pagination-wrap ul.pagination li.pagination-first a:hover,
+div.ih-pagination-wrap ul.pagination li.pagination-last a:hover,
+div.ih-pagination-wrap ul.pagination li.pagination-prev a:hover,
+div.ih-pagination-wrap ul.pagination li.pagination-next a:hover {
+    background: $color1;
+    border-color: $color1;
+    color: #fff
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-last a:before {
+    content: "\f051";
+    margin-left: -1px
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-prev a:before {
+    content: "\f0d9";
+    font-size: 18px;
+    margin-left: -1px
+}
+
+div.ih-pagination-wrap ul.pagination li.pagination-next a:before {
+    content: "\f0da";
+    font-size: 18px;
+    margin-left: 1px
+}
+
+div.ih-pagination-wrap div.ih-pagination {
+    margin-top: 22.5px;
+    float: right
+}
+
+div.ih-pagination-wrap div.ih-pagination select.form-control {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+//
+//.ih-pagination-wrap.top{display:none!important;}

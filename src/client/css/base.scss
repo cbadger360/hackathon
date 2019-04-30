@@ -1,0 +1,17 @@
+//
+$color-white: #fff!default;
+$color-black: #000!default;
+$default-padding: 15px!default;
+$color1: #004c42!default; // Primary
+$color2: #93c80a!default; // Secondary
+$color3: #391120!default; // Tertiary
+$color4: #004c42!default; // Quaternary
+$color5: #F2A900!default; // Quinary
+//
+@import "../../core/css/breakpoints";
+@import "./layout/base";
+@import "./layout/header";
+@import "./layout/heading";
+@import "./component/contentapps/base";
+@import "./component/form/base";
+@import "./component/panel/base";

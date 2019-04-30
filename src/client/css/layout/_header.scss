@@ -1,0 +1,37 @@
+header{
+    &.navbar-default{
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        margin: 0 auto;
+        padding: 0;
+        @include sm-and-up{
+            border-bottom: 10px solid #93c80a;
+            padding: 30px 0;
+            ul.navbar-nav{
+                &.menu--main{
+                    float: right;
+                    li{
+                        a{
+                            color: #333;
+                            display: block;
+                            font-size: 15px;
+                            font-weight: 500;
+                            //line-height: 20px;
+                            margin: 0;
+                            padding: 15px 20px;
+                            //text-transform: uppercase;
+                            &:focus,
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                &.menu--account{
+                    display: none;
+                }
+            }
+        }
+    }
+}

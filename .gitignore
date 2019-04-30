@@ -1,0 +1,9 @@
+*/*
+!.gitignore
+!gulpfile.js
+!package-lock.json
+!package.json
+!readme.md
+!config/*
+!src/*
+*.DS_Store

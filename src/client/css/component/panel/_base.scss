@@ -1,0 +1,19 @@
+.panel{
+    &.panel-default{
+        border: 0!important;
+        box-shadow: none;
+    }
+    .panel-body{
+        ul{
+            font-size: 12pt;
+            line-height: 18pt;
+        }
+        p{
+            font-size: 12pt;
+            line-height: 18pt;
+        }
+        img{
+            padding: 15px;
+        }
+    }
+}

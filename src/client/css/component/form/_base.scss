@@ -1,0 +1,17 @@
+.btn,
+.form-control{
+    border-radius: 4px!important;
+}
+
+a.btn{
+    &.btn-default{
+        background: $color1!important;
+        border-color: $color1!important;
+        color: $color-white!important;
+    }
+    &.btn-primary{
+        background: $color2!important;
+        border-color: $color2!important;
+        color: $color-white!important;
+    }
+}

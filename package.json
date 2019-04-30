@@ -1,0 +1,43 @@
+{
+  "name": "hg-uno",
+  "version": "1.0.0",
+  "description": "hg-uno",
+  "homepage": "https://bitbucket.org/healthgrades/hg-uno#readme",
+  "repository": {
+    "type": "git",
+    "url": " git@bitbucket.org:healthgrades/hg-uno.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "healthgrades",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "clean-css": "^4.2.1",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-aegean": "^0.2.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-footer": "^2.0.2",
+    "gulp-header": "^2.0.7",
+    "gulp-multi-dest": "^1.3.7",
+    "gulp-prompt": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^8.0.0",
+    "gulp-touch-cmd": "0.0.1",
+    "node-sass": "^4.11.0",
+    "sass": "^1.17.4",
+    "stylelint": "^9.10.1",
+    "stylelint-a11y": "^1.1.11",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.2.0",
+    "stylelint-scss": "^3.5.4",
+    "stylelint-selector-no-empty": "^1.0.7"
+  }
+}
