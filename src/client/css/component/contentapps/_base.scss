@@ -54,7 +54,7 @@ $component-content-apps-provider-accepting-new-patients-true-icon-color: $color1
 
 div.ih-event,
 div.ih-location,
-div.ih-provider {
+div.ih-provider{
 
 	@include sm {
 		&.ih-publiclistview {
@@ -821,3 +821,87 @@ div.ih-pagination-wrap div.ih-pagination select.form-control {
 
 //
 //.ih-pagination-wrap.top{display:none!important;}
+
+div.ih-service{
+	&.ih-publiclistview{
+		h3{
+			font-size: 30px;
+			margin: 0 0 15px 0;
+			padding: 0;
+
+			a{
+				color: $color1;
+			}
+		}
+
+		p,
+		div{
+			font-size: 12pt;
+			line-height: 20pt;
+			margin: 0;
+			padding: 0;
+			span{
+				font-size: 12pt!important;
+				line-height: 20pt!important;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		br,
+		img,
+		ul,
+		ol{
+			display: none;
+		}
+		//
+		.ih-list-item{
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	&.ih-publicdetailview{
+		.form-group{
+			&.ih-field-locations{
+				padding-left: 40px;
+				h3{
+					font-size: 30px;
+					margin: 0 0 15px 0;
+					padding: 0;
+				}
+				ul{
+					margin: 30px 0 0 0;
+				}
+			}
+			&.ih-field-locationaddress{
+				font-size: 14pt;
+			}
+			&.ih-field-servicedescription{
+				margin: 0;
+				br{
+					display: none;
+				}
+				img{
+					margin-bottom: 30px;
+					border-radius: 4px;
+				}
+				p,
+				div{
+					font-size: 12pt;
+					line-height: 20pt;
+					margin: 0;
+					padding: 0;
+					span{
+						font-size: 12pt!important;
+						line-height: 20pt!important;
+						margin: 0;
+						padding: 0;
+					}
+				}
+				p{
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+}
